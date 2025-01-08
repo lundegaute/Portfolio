@@ -1,0 +1,28 @@
+Instalation of prettier, eslint and husky
+For checking code formating and errors on a project level
+
+prettier: (Every line starting with "-" is written in the terminal
+- npm i prettier -D --save-exat
+
+create a src file in the root of the project // This might not be important actually
+file - preferences - settings - "format on save" ON
+
+for customizing prettier: .prettierrc file to the root folder (https://prettier.io/docs/en/options.html) for options
+
+ignoring files from formatting: .prettierignore files. Works similar to .gitignore
+
+add a script to package.json: "format": "prettier --write ." when run, all files will be prettyfied
+
+eslint:
+- npm i eslint --save-dev
+- npx eslint --init
+Installing briding between prettier and eslint:
+- npm i --save-dev eslint-plugin-prettier eslint-config-prettier
+create: .eslintrc.js file to integrate prettier settings - See file in my root folder
+
+to run eslint as a script in package.json - see file (two options, one for all files, one for only .js files)
+
+Husky:
+npm i husky --save-dev
+npx husky init
+echo "npx lint-staged" < .husky/pre-comit // this last one should be written in the terminal  
