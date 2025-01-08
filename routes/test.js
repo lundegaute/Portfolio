@@ -7,7 +7,7 @@ const RoleService = require("../services/roleService");
 const roleService = new RoleService(db);
 const auth = require("../middleware/authenticate");
 
-router.get("/", auth.token, auth.isUser, async (req, res,) => {
+router.get("/", auth.token, auth.isUser, async (req, res) => {
   console.log(req.user);
   res.render("test", { user: req.user });
 });
