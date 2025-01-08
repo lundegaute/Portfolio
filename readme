@@ -23,6 +23,7 @@ create: .eslintrc.js file to integrate prettier settings - See file in my root f
 to run eslint as a script in package.json - see file (two options, one for all files, one for only .js files)
 
 Husky:
-npm i husky --save-dev
-npx husky init
-echo "npx lint-staged" < .husky/pre-comit // this last one should be written in the terminal  
+- npm i husky --save-dev
+- npx husky init (creates a .huskey folder in our root folder)
+- echo "npx lint-staged" < .husky/pre-comit
+- npm i lint-staged --save-dev

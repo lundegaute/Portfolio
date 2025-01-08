@@ -9,6 +9,9 @@ const jsend = require("jsend");
 const checkEncryptedPassword = require("../middleware/checkPassword");
 router.use(jsend.middleware);
 
+
+//remove this commentfgerwgerg
+
 router.get("/", async (req, res, next) => {
   //res.jsend.success({"StatusCode": 200, "Result": "Success"})
   res.render("login", {});
